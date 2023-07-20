@@ -36,6 +36,7 @@ CMD ["bash"]
 FROM python:3.11.2-slim-bullseye AS app
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
+ADD src /app/src
 WORKDIR /app
 
 ARG UID=1000
